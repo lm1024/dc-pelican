@@ -31,11 +31,9 @@ Enough philosophy - how does this relate to software projects? Well, most manage
 
 The currently fashionable Agile crop is no exception. This may or may not surprise you, given
 
-<bl>
-<li>...the 'thought leaders' appear highly qualified</li>
-<li>...the Agile literature (books, articles etc) use references and citations just like scientific texts</li>
-<li>...they talk about 'metrics', 'studies' and 'research', again just like science</li>
-</bl>
+* the 'thought leaders' appear highly qualified
+* the Agile literature (books, articles etc) use references and citations just like scientific texts
+* they talk about 'metrics', 'studies' and 'research', again just like science
 
 Let's take these one at a time...
 
