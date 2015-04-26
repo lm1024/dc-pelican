@@ -1,0 +1,26 @@
+layout: post
+title: Apple vs Contortionists redux
+author: devcurmudgeon
+date: 2010/10/01
+
+Previously I asked ["Does Apple use Scrum?"...]()
+
+An ex underling just slipped me the recipe for Apple's secret sauce....
+
+Wanna hear? Of course you do... you too could make gazillions... but you've got to promise not to tell anybody else. 
+
+It goes like this...
+
+   1. Three independent design teams produce mockups....say three mockups per team...
+   2. Each team doesn't get to <strike>steal</strike> re-use the others' ideas...
+   3. The mockups all get hacked to pieces by Steve or underSteves...
+   4. Iterate, rinse and repeat, whittling down to three...
+   5. Down to one accepted mockup which is pixel perfect and complete
+   6. The mockup is handed over to engineering...
+   7. The self-managing engineering team do a Sprint Planning Meeting...
+
+
+No, just kidding.
+
+When engineering get the jesus mockup they do a traditional software engineering process from DFD onwards - late nights, caffeine, pizzas, threats, whips, chains... the works.
+
