@@ -2,8 +2,8 @@
 # -*- coding: utf-8 -*- #
 from __future__ import unicode_literals
 
-AUTHOR = u'devCurmudgeon'
-SITENAME = u'devCurmudgeon'
+AUTHOR = u'devcurmudgeon'
+SITENAME = u'devcurmudgeon'
 SITEURL = ''
 
 PATH = 'content'
@@ -22,14 +22,11 @@ AUTHOR_FEED_ATOM = None
 AUTHOR_FEED_RSS = None
 
 # Blogroll
-LINKS = (('Pelican', 'http://getpelican.com/'),
-         ('Python.org', 'http://python.org/'),
-         ('Jinja2', 'http://jinja.pocoo.org/'),
-         ('You can modify those links in your config file', '#'),)
+LINKS = (('codethink', 'http://codethink.com/'),
+         ('baserock', 'http://wiki.baserock.org/'),
+         ('twitter', 'http://twitter.com/devcurmudgeon'),
+         ('github', 'http://github.com/devcurmudgeon'),)
 
-# Social widget
-SOCIAL = (('You can add links in your config file', '#'),
-          ('Another social link', '#'),)
 
 DEFAULT_PAGINATION = False
 
