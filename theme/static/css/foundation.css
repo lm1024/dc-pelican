@@ -2776,11 +2776,11 @@ td {
 
 /* Default Link Styles */
 a {
-  color: #2ba6cb;
+  color: #0D7A5A;
   text-decoration: none;
   line-height: inherit; }
   a:hover, a:focus {
-    color: #2795b6; }
+    color: #0D7A5A; }
   a img {
     border: none; }
 
