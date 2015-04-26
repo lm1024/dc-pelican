@@ -1,0 +1,681 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8" />
+    <!-- Set the viewport width to device width for mobile -->
+    <meta name="viewport" content="width=device-width" />
+
+    <title>devcurmudgeon - misc</title>
+
+    <link rel="stylesheet" href="/theme/css/normalize.css" />
+    <link rel="stylesheet" href="/theme/css/foundation.min.css" />
+    <link rel="stylesheet" href="/theme/css/style.css" />
+    <link rel="stylesheet" href="/theme/css/pygments.css" />	
+    <script src="/theme/js/modernizr.js"></script>
+</head>
+
+<body>
+
+<!-- Nav Bar -->
+<nav>
+<div class="top-bar">
+<div class="row">
+    <div class="large-9 large-centered columns">
+	    <h1><a href="">devcurmudgeon</a></h1>
+    </div>
+</div>
+</div>
+
+<!-- Show menu items and pages -->
+<div class="row">
+<div class="large-9 columns">
+    <ul class="button-group navigation">
+
+    </ul>
+</div>
+</div>
+</nav>
+<!-- End Nav -->
+
+
+<!-- Main Page Content and Sidebar -->
+<div class="row">
+
+    <!-- Main Blog Content -->
+    <div class="large-9 columns">
+        
+        
+
+            <article>
+                <a href="/three-times-done.html"><h3 class="article-title">Three Times Done</h3></a>
+<h6 class="subheader" title="2015-01-11T00:00:00+01:00">Sun 11 January 2015
+</h6>
+
+
+<p>In my experience many organisations experience systemic difficulties in getting work 'done' to an acceptable standard. The Scrum solution for this is 'agreed definition of done', which typically leads to a checklist eg</p>
+
+<ul>
+<li>the work has been checked in to the VCS</li>
+<li>it builds ok</li>
+<li>the automated tests pass</li>
+<li>documentation exists, etc.</li>
+</ul>
+
+<p>That's great, assuming that infrastructure to satisfy the checklist actually exists and is stable. Often on projects we find ourselves having to create the infrastructure itself, and define/agree workable procedures relative to the specific work we need to do.</p>
+
+<p>And in an R&amp;D or services environment with lots of variance in project parameters (scale, technology, risks, scope, terms) we often struggle to nail down what 'done' actually means. </p>
+
+<p>In many cases, 'done' on a single project needs to mean different things at different times and for different types of work.</p>
+
+<p>For example, a thorough and formal 'done' with tests and documentation etc may be great for ensuring a satisfactory delivery, but it would impede prototyping to establish whether the project is feasible in the first place.</p>
+
+<p>So I'm proposing that we can explicitly consider software work in three modes:</p>
+
+<ul>
+<li>R&amp;D</li>
+<li>ENGINEERING</li>
+<li>PRODUCTION </li>
+</ul>
+
+<h3>1: R&amp;D</h3>
+
+<p>(Feasibility, prototype, proof of concept, demo, hack, kludge, experiment, investigation, research)</p>
+
+<p>At this stage we want to get to a specific result, but don't really care how we get there. The emphasis is on</p>
+
+<ul>
+<li>gaining information - can it be done? how should it be done?</li>
+<li>reducing risks</li>
+<li>providing proof, a demonstration, a video, a report</li>
+<li>collecting and documenting ideas, opportunities, obstacles, risks to help in later stages</li>
+<li>getting to the end as fast as is reasonably possible</li>
+</ul>
+
+<p>Crucial thing to note here is that by default this type of work should typically happen in a fast, creative, cut-as-many-corners-as-we-can-to-get-there style.</p>
+
+<p>Any systems/solutions/software that we spin up for this should normally be considered to be throw-away or temporary. If a stated objective is to <em>use</em> the output in some way, that use should be noted as risky, experimental etc, since it will exploit piece of work which is ill-defined and will be of uncertain quality. </p>
+
+<p>The two key traps to avoid are</p>
+
+<p>A) management thinking that the resulting demo/POC actually does anything that can be used/sold/delivered.
+B) engineers fearing that management will want to deliver the result</p>
+
+<p>Trap A) leads to stressed engineers, and users receiving systems with fundamental design/approach flaws
+Trap B) leads to engineers wasting time and effort on things which ultimately are not required</p>
+
+<h3>2: ENGINEERING</h3>
+
+<p>(Engineered, developed, coded, tested, reviewed, signed off)</p>
+
+<p>Now we want to implement something for real. The result of this will be used by other people, so it needs to be designed properly, perform fast enough, be reliable, deal with bad user inputs etc. The output from this is expected to be some system/solution/software that the engineers believe is 'done'. </p>
+
+<p>It does the job.</p>
+
+<p>The key trap here is</p>
+
+<p>C) Management thinking that the resulting engineering solution is the end of the project. In most cases, a range of follow-on activities will be required after engineering is notionally 'complete' to get the result adopted and running for its target users. The gap may include data migration, deployment, releasing, training, soak testing, backups, user setup, security, maintenance planning etc.</p>
+
+<p>Even exceptional engineers will not have time or mental bandwidth to do these necessary things while designing and coding the solution itself.</p>
+
+<p>However we must ensure that the engineering output from this phase includes all of the notes, ideas, limitations and documentation that the team have generated getting this far, as input into what comes next...</p>
+
+<h3>3: PRODUCTION</h3>
+
+<p>(Live, in production, integrated, released, delivered, published, deployed, documented, released, validated, accepted, upstreamed, in mainline, being maintained)</p>
+
+<p>This phase is where the real world kicks in. All of the assumptions and knowledge gaps that were implicitly influencing the engineers working in phase 2) are now exposed as other people try to take the result and roll it into production, get it through acceptance, sign it off, use it for real etc.</p>
+
+<p>Traps here include</p>
+
+<p>D) expecting the engineers that did phase 2) to deal with phase 3) - it's unlikely that they'll be effective at exposing their own blind spots and assumptions.
+E) assuming that this phase will take less effort than the one before it</p>
+
+<h3>Notes</h3>
+
+<ul>
+<li>We are not assuming that all pieces of work go through all phases</li>
+<li>When working on R&amp;D or ENGINEERING we still need to consider that PRODUCTION may/will happen later, and ensure the results of that thinking are recorded and passed on in an effective way.</li>
+<li>It will not always be possible to separate the work this way - however explicitly clarifying which phase an activity fits into should help to establish what needs doing, and how the job should be approached.</li>
+</ul>
+
+<p>Finally, note that work done when we focus on real delivery may expose deep misunderstandings and/or issues which invalidate much or all of the previous effort. So remember "Code less. Every line creates a work chain. Code is a liability, not an asset"</p><p class="subheader">Category: <a href="/category/misc.html">misc</a>
+
+</p>
+
+
+
+            </article>
+
+
+                <hr  class="gradient"/>
+
+
+        
+
+
+            <article>
+                <a href="/refactoring-is-an-anti-pattern.html"><h3 class="article-title">Refactoring is an anti-pattern</h3></a>
+<h6 class="subheader" title="2013-12-13T00:00:00+01:00">Fri 13 December 2013
+</h6>
+
+
+<p>I thought I'd written <em>more</em> than enough words on <a href="http://www.devcurmudgeon.com/2010/10/02/i-dont-like-your-code/">refactoring</a> already, but maybe I was too cryptic. </p>
+<p>So here's my version 2.</p>
+<p>Let's start by noting that most of the folks who claim that they are 'refactoring' don't actually know what it means.</p>
+<p>I, on the ...</p><p class="subheader">Category: <a href="/category/misc.html">misc</a>
+
+</p>
+
+
+
+                <a class="button radius secondary small right" href="/refactoring-is-an-anti-pattern.html">Read More</a>
+                <hr  class="gradient"/>
+            </article>
+
+        
+
+
+            <article>
+                <a href="/what-does-bsp-stand-for.html"><h3 class="article-title">What does "BSP" stand for?</h3></a>
+<h6 class="subheader" title="2013-06-23T00:00:00+02:00">Sun 23 June 2013
+</h6>
+
+
+<p>During a <strike>late-night drinking session</strike> technical discussion this week there was confusion about the meaning of "BSP" for Linux and Android. </p>
+<p>Some folks think BSP stands for "Board Support Package". </p>
+<p>But, as with <a href="http://www.devcurmudgeon.com/2010/08/28/software-chaos-ridiculously-under-managed/">SCRUM</a>, the popular view is wrong.</p>
+<p>In the real world, BSP means <b>Bull Shit Project</b>.</p>
+<p>BSPs are ...</p><p class="subheader">Category: <a href="/category/misc.html">misc</a>
+
+</p>
+
+
+
+                <a class="button radius secondary small right" href="/what-does-bsp-stand-for.html">Read More</a>
+                <hr  class="gradient"/>
+            </article>
+
+        
+
+
+            <article>
+                <a href="/the-worst-metric.html"><h3 class="article-title">The Worst Metric</h3></a>
+<h6 class="subheader" title="2013-02-06T00:00:00+01:00">Wed 06 February 2013
+</h6>
+
+
+<p>Lines Of Code is an awful way to measure software - but look at the pretty picture...</p>
+<script type="text/javascript" src="//ajax.googleapis.com/ajax/static/modules/gviz/1.0/chart.js"> {"dataSourceUrl":"//docs.google.com/a/codethink.co.uk/spreadsheet/tq?key=0Aiph3VJv3myMdFBaZTNKUDNFeFVWa3pjY2M3ZlI4dnc&transpose=0&headers=0&range=D2%3AE158&gid=6&pub=1","options":{"titleTextStyle":{"bold":true,"color":"#000","fontSize":16},"animation":{"duration":500 ...</script><p class="subheader">Category: <a href="/category/misc.html">misc</a>
+
+</p>
+
+
+
+                <a class="button radius secondary small right" href="/the-worst-metric.html">Read More</a>
+                <hr  class="gradient"/>
+            </article>
+
+        
+
+
+            <article>
+                <a href="/the-software-commandments.html"><h3 class="article-title">The software commandments</h3></a>
+<h6 class="subheader" title="2011-07-15T00:00:00+02:00">Fri 15 July 2011
+</h6>
+
+
+<p>OK, I admit it - some of the Agile thinking <em>did</em> influence the recent <a href="http://codethink.co.uk/commandments">Software Commandments 2.0 update</a>. </p>
+<p>I accept short timeboxed sprints. </p>
+<p>Agreed definition of DONE - great.</p>
+<p>Prioritised list of requirements - awesome.</p>
+<p>Daily standups - fine if you are all in the same room, and you stick to the rules ...</p><p class="subheader">Category: <a href="/category/misc.html">misc</a>
+
+</p>
+
+
+
+                <a class="button radius secondary small right" href="/the-software-commandments.html">Read More</a>
+                <hr  class="gradient"/>
+            </article>
+
+        
+
+
+            <article>
+                <a href="/the-best-revenge.html"><h3 class="article-title">The best revenge...</h3></a>
+<h6 class="subheader" title="2011-07-14T00:00:00+02:00">Thu 14 July 2011
+</h6>
+
+
+<p>Over the years I've worked with many amazing people, but from time to time I've also had to deal with some <strike>complete assholes</strike> unpleasantness. </p>
+<p>Frankly it's amazing at how downright dishonest, manipulative and plain stupid some folks can be. </p>
+<p>Actually plain stupid applies to me too. </p>
+<p>I ...</p><p class="subheader">Category: <a href="/category/misc.html">misc</a>
+
+</p>
+
+
+
+                <a class="button radius secondary small right" href="/the-best-revenge.html">Read More</a>
+                <hr  class="gradient"/>
+            </article>
+
+        
+
+
+            <article>
+                <a href="/i-predict-the-future-of-embedded-linux.html"><h3 class="article-title">I predict the future of embedded Linux</h3></a>
+<h6 class="subheader" title="2011-05-06T00:00:00+02:00">Fri 06 May 2011
+</h6>
+
+
+<p>I've been reading the excellent <i>Future Babble</i> by Dan Gardner. </p>
+<p>Perhaps unsurprisingly, it confirms that we're all wired as <b>complete idiots</b> when it comes to looking into the future.</p>
+<p>The science shows that the more confidently someone makes a prediction, the more likely they're talking utter balls ...</p><p class="subheader">Category: <a href="/category/misc.html">misc</a>
+
+</p>
+
+
+
+                <a class="button radius secondary small right" href="/i-predict-the-future-of-embedded-linux.html">Read More</a>
+                <hr  class="gradient"/>
+            </article>
+
+        
+
+
+            <article>
+                <a href="/i-believe-in-aeroplanes.html"><h3 class="article-title">I believe in aeroplanes</h3></a>
+<h6 class="subheader" title="2011-01-27T00:00:00+01:00">Thu 27 January 2011
+</h6>
+
+
+<p>How can you be sure that something is true? </p>
+<p>Actually it is surprisingly difficult... Do I mean true as in fact or true as in 'I believe this'?  Maybe we're in the matrix, and everything is a simulation... maybe the people you trust are lying.. or maybe they're ...</p><p class="subheader">Category: <a href="/category/misc.html">misc</a>
+
+</p>
+
+
+
+                <a class="button radius secondary small right" href="/i-believe-in-aeroplanes.html">Read More</a>
+                <hr  class="gradient"/>
+            </article>
+
+        
+
+
+            <article>
+                <a href="/devcurmudgeon.html"><h3 class="article-title">devcurmudgeon</h3></a>
+<h6 class="subheader" title="2011-01-16T00:00:00+01:00">Sun 16 January 2011
+</h6>
+
+
+<p>After a typically <strike>ignored</strike> secretive softlaunch, I'm finally taking the wraps off devcurmudgeon. The idea is to be funny, incisive... and maybe change the world one <strike>hacker</strike> software developer at a time. But I'm not optimistic. This project may fail, like so many others :-) </p>
+<p>Mostly I expect to ...</p><p class="subheader">Category: <a href="/category/misc.html">misc</a>
+
+</p>
+
+
+
+                <a class="button radius secondary small right" href="/devcurmudgeon.html">Read More</a>
+                <hr  class="gradient"/>
+            </article>
+
+        
+
+
+            <article>
+                <a href="/el-reg-not-your-grandads-project-management.html"><h3 class="article-title">El Reg "not your grandad's project management"</h3></a>
+<h6 class="subheader" title="2010-12-14T00:00:00+01:00">Tue 14 December 2010
+</h6>
+
+
+<p>I confess, I get a lot of my worldview from The Register... saves me coming up with my own jokes.</p>
+<p>Anyway, was a little disappointed watching this...</p>
+<p><link>http://whitepapers.theregister.co.uk/paper/watch/1787</link></p>
+<p>Had to turn off when the Microsoft guy said "you have to build the business ...</p><p class="subheader">Category: <a href="/category/misc.html">misc</a>
+
+</p>
+
+
+
+                <a class="button radius secondary small right" href="/el-reg-not-your-grandads-project-management.html">Read More</a>
+                <hr  class="gradient"/>
+            </article>
+
+        
+
+
+            <article>
+                <a href="/my-briefcase-is-older-than-you.html"><h3 class="article-title">My briefcase is older than you</h3></a>
+<h6 class="subheader" title="2010-11-30T00:00:00+01:00">Tue 30 November 2010
+</h6>
+
+
+<p>I recently demonstrated my <strike>desperation</strike> gravitas to a roomful of undergraduates with the immortal line "My briefcase is older than you." Disappointingly they continued fiddling with their gadgets.</p>
+<p>Even my rollercoaster antics with Prezi failed to amuse...</p>
+<iframe src="http://prezi.com/embed/h_9qjmqiql1y/?bgcolor=ffffff&amp;lock_to_path=1&amp;autoplay=0&amp;autohide_ctrls=0&amp;features=undefined&amp;disabled_features=undefined" width="550" height="400" frameBorder="0"></iframe>
+
+<p>But the exercise was not entirely a waste of time.</p>
+<p>A spot of ...</p><p class="subheader">Category: <a href="/category/misc.html">misc</a>
+
+</p>
+
+
+
+                <a class="button radius secondary small right" href="/my-briefcase-is-older-than-you.html">Read More</a>
+                <hr  class="gradient"/>
+            </article>
+
+        
+
+
+            <article>
+                <a href="/picking-a-fight.html"><h3 class="article-title">Picking a fight...</h3></a>
+<h6 class="subheader" title="2010-11-14T00:00:00+01:00">Sun 14 November 2010
+</h6>
+
+
+<p>Maybe I'm alone on this one ... but aren't Open Source and Agile pretty much directly opposed?</p>
+<p>Agile = 5-9 people in a team, locked up together, everything thrashed out in face-to-face conversations, daily standups, timeboxed iterative deliveries.</p>
+<p>Open Source = no fixed team size, distributed around the world, everything thrashed ...</p><p class="subheader">Category: <a href="/category/misc.html">misc</a>
+
+</p>
+
+
+
+                <a class="button radius secondary small right" href="/picking-a-fight.html">Read More</a>
+                <hr  class="gradient"/>
+            </article>
+
+        
+
+
+            <article>
+                <a href="/musical-differences.html"><h3 class="article-title">Musical differences...</h3></a>
+<h6 class="subheader" title="2010-11-04T00:00:00+01:00">Thu 04 November 2010
+</h6>
+
+
+<p>I used to be in a band, when I still had enough hair for a stupid haircut.</p>
+<p>We had real instruments. None of this electronic bleepy noises nonsense. We used to lug huge amplifiers everywhere, because the guitars always had to be loud enough to shake the building.</p>
+<p>Whereas the ...</p><p class="subheader">Category: <a href="/category/misc.html">misc</a>
+
+</p>
+
+
+
+                <a class="button radius secondary small right" href="/musical-differences.html">Read More</a>
+                <hr  class="gradient"/>
+            </article>
+
+        
+
+
+            <article>
+                <a href="/open-sores.html"><h3 class="article-title">Open Sores</h3></a>
+<h6 class="subheader" title="2010-10-22T00:00:00+02:00">Fri 22 October 2010
+</h6>
+
+
+<p>I need to get with the program. All these years working on secret projects with someone else's name on the mastheads have created an obvious problem - nobody knows who the hex I am.</p>
+<p>But wait!</p>
+<p>There's an obvious solution too.</p>
+<p>Why don't I just take my old ...</p><p class="subheader">Category: <a href="/category/misc.html">misc</a>
+
+</p>
+
+
+
+                <a class="button radius secondary small right" href="/open-sores.html">Read More</a>
+                <hr  class="gradient"/>
+            </article>
+
+        
+
+
+            <article>
+                <a href="/i-dont-like-your-code.html"><h3 class="article-title">I don't like your code...</h3></a>
+<h6 class="subheader" title="2010-10-02T00:00:00+02:00">Sat 02 October 2010
+</h6>
+
+
+<p>No, really.</p>
+<p>I mean it.</p>
+<p>Refactor as much as you want, it will still smell of you.</p><p class="subheader">Category: <a href="/category/misc.html">misc</a>
+
+</p>
+
+
+
+                <a class="button radius secondary small right" href="/i-dont-like-your-code.html">Read More</a>
+                <hr  class="gradient"/>
+            </article>
+
+        
+
+
+            <article>
+                <a href="/apple-vs-contortionists-redux.html"><h3 class="article-title">Apple vs Contortionists redux</h3></a>
+<h6 class="subheader" title="2010-10-01T00:00:00+02:00">Fri 01 October 2010
+</h6>
+
+
+<p>Previously I asked <a href="">"Does Apple use Scrum?"...</a></p>
+<p>An ex underling just slipped me the recipe for Apple's secret sauce....</p>
+<p>Wanna hear? Of course you do... you too could make gazillions... but you've got to promise not to tell anybody else. </p>
+<p>It goes like this...</p>
+<ol>
+<li>Three independent design teams ...</li></ol><p class="subheader">Category: <a href="/category/misc.html">misc</a>
+
+</p>
+
+
+
+                <a class="button radius secondary small right" href="/apple-vs-contortionists-redux.html">Read More</a>
+                <hr  class="gradient"/>
+            </article>
+
+        
+
+
+            <article>
+                <a href="/software-chaos-ridiculously-under-managed.html"><h3 class="article-title">Software Chaos Ridiculously Under Managed</h3></a>
+<h6 class="subheader" title="2010-08-28T00:00:00+02:00">Sat 28 August 2010
+</h6>
+
+
+<p>So this post is just a place-holder for me to launch my new methodology - SCRUM.</p>
+<p>I'd hate to have some fan copy my ideas (again) and find myself unable to prove categorically that I thought it first, so here goes...</p>
+<p>Google tells me (so it must be true) that ...</p><p class="subheader">Category: <a href="/category/misc.html">misc</a>
+
+</p>
+
+
+
+                <a class="button radius secondary small right" href="/software-chaos-ridiculously-under-managed.html">Read More</a>
+                <hr  class="gradient"/>
+            </article>
+
+        
+
+
+            <article>
+                <a href="/emperors-new-scrum-iteration-1.html"><h3 class="article-title">Emperor's New Scrum... iteration 1</h3></a>
+<h6 class="subheader" title="2010-08-27T00:00:00+02:00">Fri 27 August 2010
+</h6>
+
+
+<p>I've been wading through the literature on Scrum/Agile/Lean/Kanban/Hokey-kokey for months now, and I'm still no nearer to making sense of it...</p>
+<p>How on earth can folks seriously believe that the whole commercial world should turn itself upside down so programmers can have an easy ...</p><p class="subheader">Category: <a href="/category/misc.html">misc</a>
+
+</p>
+
+
+
+                <a class="button radius secondary small right" href="/emperors-new-scrum-iteration-1.html">Read More</a>
+                <hr  class="gradient"/>
+            </article>
+
+        
+
+
+            <article>
+                <a href="/on-time-and-on-budget-yeah-right.html"><h3 class="article-title">On time and on budget - yeah right!</h3></a>
+<h6 class="subheader" title="2010-08-07T00:00:00+02:00">Sat 07 August 2010
+</h6>
+
+
+<p>Developing complex software well is actually very difficult to do.</p>
+<p>Seems to me it requires intelligence way above average, combined with enough pig-headedness to refuse to be defeated by dumb chips and other people's code spitting random error codes at you - often for hours or days at a time ...</p><p class="subheader">Category: <a href="/category/misc.html">misc</a>
+
+</p>
+
+
+
+                <a class="button radius secondary small right" href="/on-time-and-on-budget-yeah-right.html">Read More</a>
+                <hr  class="gradient"/>
+            </article>
+
+        
+
+
+            <article>
+                <a href="/extreme-programming-80s-style-epic-fail.html"><h3 class="article-title">Extreme programming 80s style - epic fail</h3></a>
+<h6 class="subheader" title="2010-08-06T00:00:00+02:00">Fri 06 August 2010
+</h6>
+
+
+<p>My first brush with programming was on the <a href="http://www.rskey.org/detail.asp?manufacturer=Sinclair&amp;model=Cambridge+Programmable">Sinclair Cambridge Programmable Calculator</a>. A mathematics teacher got me hooked - if I remember well he was later knocked down and killed by a milk float.</p>
+<p>Later I messed about on the <a href="http://en.wikipedia.org/wiki/ZX80">ZX80</a>, <a href="http://en.wikipedia.org/wiki/ZX81">ZX81</a>, <a href="http://en.wikipedia.org/wiki/Sinclair_ZX_Spectrum">ZX Spectrum</a>, and <a href="http://en.wikipedia.org/wiki/Sinclair_QL">Sinclair QL</a> while sailing gracelessly through ...</p><p class="subheader">Category: <a href="/category/misc.html">misc</a>
+
+</p>
+
+
+
+                <a class="button radius secondary small right" href="/extreme-programming-80s-style-epic-fail.html">Read More</a>
+                <hr  class="gradient"/>
+            </article>
+
+        
+
+
+            <article>
+                <a href="/some-background.html"><h3 class="article-title">Some background...</h3></a>
+<h6 class="subheader" title="2010-08-05T00:00:00+02:00">Thu 05 August 2010
+</h6>
+
+
+<p>After years of advising folks NOT to blog, tweet or display their <strike>backsides</strike> innermost secrets on facebook, here I am poised to break my own rules. No doubt I'll come to regret it later, but really, I need to vent.</p>
+<p>Later posts will explain why...</p><p class="subheader">Category: <a href="/category/misc.html">misc</a>
+
+</p>
+
+
+
+                <a class="button radius secondary small right" href="/some-background.html">Read More</a>
+                <hr  class="gradient"/>
+            </article>
+
+            <!-- /#posts-list -->
+
+    </div>
+    <!-- End Main Content -->
+
+    <!-- Sidebar -->
+    <aside class="large-3 columns">
+
+        <h5 class="sidebar-title">Stuff</h5>
+        <ul class="side-nav">
+            <li><a href="http://codethink.com/">codethink</a></li>
+            <li><a href="http://wiki.baserock.org/">baserock</a></li>
+            <li><a href="http://twitter.com/devcurmudgeon">twitter</a></li>
+            <li><a href="http://github.com/devcurmudgeon">github</a></li>
+        </ul>
+		
+        <h5 class="sidebar-title">Posts</h5>
+<table class="table-archive">
+    <tbody>
+        <tr>
+        <td><a href='three-times-done.html'>Three Times Done</a></td>
+        </tr>
+        <tr>
+        <td><a href='refactoring-is-an-anti-pattern.html'>Refactoring is an anti-pattern</a></td>
+        </tr>
+        <tr>
+        <td><a href='what-does-bsp-stand-for.html'>What does "BSP" stand for?</a></td>
+        </tr>
+        <tr>
+        <td><a href='the-worst-metric.html'>The Worst Metric</a></td>
+        </tr>
+        <tr>
+        <td><a href='the-software-commandments.html'>The software commandments</a></td>
+        </tr>
+        <tr>
+        <td><a href='the-best-revenge.html'>The best revenge...</a></td>
+        </tr>
+        <tr>
+        <td><a href='i-predict-the-future-of-embedded-linux.html'>I predict the future of embedded Linux</a></td>
+        </tr>
+        <tr>
+        <td><a href='i-believe-in-aeroplanes.html'>I believe in aeroplanes</a></td>
+        </tr>
+        <tr>
+        <td><a href='devcurmudgeon.html'>devcurmudgeon</a></td>
+        </tr>
+        <tr>
+        <td><a href='el-reg-not-your-grandads-project-management.html'>El Reg "not your grandad's project management"</a></td>
+        </tr>
+        <tr>
+        <td><a href='my-briefcase-is-older-than-you.html'>My briefcase is older than you</a></td>
+        </tr>
+        <tr>
+        <td><a href='picking-a-fight.html'>Picking a fight...</a></td>
+        </tr>
+        <tr>
+        <td><a href='musical-differences.html'>Musical differences...</a></td>
+        </tr>
+        <tr>
+        <td><a href='open-sores.html'>Open Sores</a></td>
+        </tr>
+        <tr>
+        <td><a href='i-dont-like-your-code.html'>I don't like your code...</a></td>
+        </tr>
+        <tr>
+        <td><a href='apple-vs-contortionists-redux.html'>Apple vs Contortionists redux</a></td>
+        </tr>
+        <tr>
+        <td><a href='software-chaos-ridiculously-under-managed.html'>Software Chaos Ridiculously Under Managed</a></td>
+        </tr>
+        <tr>
+        <td><a href='emperors-new-scrum-iteration-1.html'>Emperor's New Scrum... iteration 1</a></td>
+        </tr>
+        <tr>
+        <td><a href='on-time-and-on-budget-yeah-right.html'>On time and on budget - yeah right!</a></td>
+        </tr>
+        <tr>
+        <td><a href='extreme-programming-80s-style-epic-fail.html'>Extreme programming 80s style - epic fail</a></td>
+        </tr>
+        <tr>
+        <td><a href='some-background.html'>Some background...</a></td>
+        </tr>
+    </tbody>
+</table>
+
+    </aside> <!-- End Sidebar -->
+
+</div> <!-- End Main Content and Sidebar -->
+
+
+<!-- Footer -->
+<footer class="row">
+    <div class="large-12 columns">
+        <hr />
+        <div class="row">
+            <div class="large-6 columns">
+              <!--                  <p>devcurmudgeon by devcurmudgeon</p> -->
+            </div>
+            </div>
+    </div>
+</footer>
+</body>
+</html>
