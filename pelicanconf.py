@@ -8,6 +8,8 @@ SITEURL = ''
 
 PATH = 'content'
 
+THEME = './theme'
+
 TIMEZONE = 'Europe/Paris'
 
 DEFAULT_LANG = u'en'
