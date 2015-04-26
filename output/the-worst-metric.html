@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8" />
+    <!-- Set the viewport width to device width for mobile -->
+    <meta name="viewport" content="width=device-width" />
+
+    <title>The Worst Metric</title>
+
+    <link rel="stylesheet" href="/theme/css/normalize.css" />
+    <link rel="stylesheet" href="/theme/css/foundation.min.css" />
+    <link rel="stylesheet" href="/theme/css/style.css" />
+    <link rel="stylesheet" href="/theme/css/pygments.css" />	
+    <script src="/theme/js/modernizr.js"></script>
+</head>
+
+<body>
+
+<!-- Nav Bar -->
+<nav>
+<div class="top-bar">
+<div class="row">
+    <div class="large-9 large-centered columns">
+	    <h1><a href="">devcurmudgeon</a></h1>
+    </div>
+</div>
+</div>
+
+<!-- Show menu items and pages -->
+<div class="row">
+<div class="large-9 columns">
+    <ul class="button-group navigation">
+
+    </ul>
+</div>
+</div>
+</nav>
+<!-- End Nav -->
+
+
+<!-- Main Page Content and Sidebar -->
+<div class="row">
+
+    <!-- Main Blog Content -->
+    <div class="large-9 columns">
+<article>
+    <header>
+        <h3 class="article-title"><a href="/the-worst-metric.html" rel="bookmark"
+        title="Permalink to The Worst Metric">The Worst Metric</a></h3>
+    </header>
+
+<h6 class="subheader" title="2013-02-06T00:00:00+01:00">Wed 06 February 2013
+</h6>
+
+
+    <p>Lines Of Code is an awful way to measure software - but look at the pretty picture...</p>
+<script type="text/javascript" src="//ajax.googleapis.com/ajax/static/modules/gviz/1.0/chart.js"> {"dataSourceUrl":"//docs.google.com/a/codethink.co.uk/spreadsheet/tq?key=0Aiph3VJv3myMdFBaZTNKUDNFeFVWa3pjY2M3ZlI4dnc&transpose=0&headers=0&range=D2%3AE158&gid=6&pub=1","options":{"titleTextStyle":{"bold":true,"color":"#000","fontSize":16},"animation":{"duration":500},"colors":["#3366CC","#DC3912","#FF9900","#109618","#990099","#0099C6","#DD4477","#66AA00","#B82E2E","#316395","#994499","#22AA99","#AAAA11","#6633CC","#E67300","#8B0707","#651067","#329262","#5574A6","#3B3EAC","#B77322","#16D620","#B91383","#F4359E","#9C5935","#A9C413","#2A778D","#668D1C","#BEA413","#0C5922","#743411"],"theme":"maximized","width":1435,"is3D":false,"pieSliceText":"label","hAxis":{"useFormatFromData":true,"minValue":null,"viewWindow":{"min":null,"max":null},"maxValue":null},"vAxes":[{"useFormatFromData":true,"minValue":null,"viewWindow":{"min":null,"max":null},"maxValue":null},{"useFormatFromData":true,"minValue":null,"viewWindow":{"min":null,"max":null},"maxValue":null}],"pieHole":0,"booleanRole":"certainty","title":"130602 Baserock GENIVI system: approx 32M loc", "height":400, "width":580,"legend":"right","pieSliceTextStyle":{"fontSize":"10"},"tooltip":{}},"state":{},"view":{},"isDefaultVisualization":true,"chartType":"PieChart","chartName":"Chart 2"} </script>
+
+<p><br/>
+That's roughly 32 Million Lines of Code involved in a Baserock <a href="http://www.genivi.org">GENIVI</a> Baseline Linux system - without any <strike>bloat</strike> <strike>C++</strike> applications. </p>
+<p>Total "effort/cost to develop" would be a much more useful metric generally, but <strike>truthful</strike> accurate numbers are <em>really</em> hard to come by, because:</p>
+<ul>
+<li>no-one wants to admit how much they really spent, or how far wrong the original estimates were.</li>
+<li>engineers work on multiple projects simultaneously.</li>
+<li>large-scale projects are done by multiple organisations in "collaboration".</li>
+<li>projects involve 're-use' of deliverables from previous projects, making it hard to measure the new stuff accurately.</li>
+<li>time is billed to 'support', or 'maintenance', or even 'sales' instead of development.</li>
+</ul>
+<p>I've never liked COCOMO much - it sucked when we used it in the 80s. And since reading <a href="https://leanpub.com/leprechauns">The Leprechauns of Software Engineering</a> I'd wager a beer there's no real science under COCOMO, in spite of Barry Boehm's pagecount.</p>
+<p>So I'll <strike>get famous when I</strike> launch the devCurmudgeon software analysis suite, to sell with the after-dinner <a href="http://www.devcurmudgeon.com/2010/08/28/software-chaos-ridiculously-under-managed/">SCRUM</a> lectures. Can't explain the details without an NDA, obviously, but it's a proprietary algorithm involving Git-active-days and the entrails of a chicken.</p>
+<p>In the meantime, I'm having to <strike>wing it</strike> analyse using LOC. My <strike>guesses</strike> detailed calculations based on Ohloh's numbers were <strike>ridiculous</strike> questionable, so colleagues suggested <a href="http://www.dwheeler.com/sloccount/">SLOCCount</a>. SLOCCount's numbers are typically smaller than Ohloh's, which is obviously useless when I'm trying to <strike>exaggerate</strike> justify figures for management. SLOCCount appears to be jolly thorough though, and it saves me flipping back and forth on hundreds of web pages.</p>
+<p>So, as requested by the program itself, the following data was "generated using David A. Wheeler's 'SLOCCount'". If David (or anyone) can shed light on why SLOCCount sees 10 Million LOC in the Linux kernel, while Ohloh and the rest of the world claim 15, please <strike>sort it out</strike> let me know.</p>
+<p>Here's the equivalent picture for the core <a href="http://wiki.baserock.org">Baserock</a> operating system (approx 25MLOC) on its own.</p>
+<script type="text/javascript" src="//ajax.googleapis.com/ajax/static/modules/gviz/1.0/chart.js"> {"dataSourceUrl":"//docs.google.com/a/codethink.co.uk/spreadsheet/tq?key=0Aiph3VJv3myMdFBaZTNKUDNFeFVWa3pjY2M3ZlI4dnc&transpose=0&headers=0&range=D2%3AE55&gid=7&pub=1","options":{"titleTextStyle":{"bold":true,"color":"#000","fontSize":16},"animation":{"duration":500},"colors":["#3366CC","#DC3912","#FF9900","#109618","#990099","#0099C6","#DD4477","#66AA00","#B82E2E","#316395","#994499","#22AA99","#AAAA11","#6633CC","#E67300","#8B0707","#651067","#329262","#5574A6","#3B3EAC","#B77322","#16D620","#B91383","#F4359E","#9C5935","#A9C413","#2A778D","#668D1C","#BEA413","#0C5922","#743411"],"theme":"maximized","width":1435,"is3D":false,"pieSliceText":"label","hAxis":{"useFormatFromData":true,"minValue":null,"viewWindow":{"min":null,"max":null},"maxValue":null},"vAxes":[{"useFormatFromData":true,"minValue":null,"viewWindow":{"min":null,"max":null},"maxValue":null},{"useFormatFromData":true,"minValue":null,"viewWindow":{"min":null,"max":null},"maxValue":null}],"pieHole":0,"title":"130602 Baserock base-system: approx 25M loc","booleanRole":"certainty","pieSliceBorderColor":"#ffffff","width":600, "height":400,"legend":"right","tooltip":{},"pieSliceTextStyle":{"fontSize":"10"}},"state":{},"view":{},"isDefaultVisualization":true,"chartType":"PieChart","chartName":"Chart 1"} </script>
+<p class="subheader">Category: <a href="/category/misc.html">misc</a>
+
+</p>
+
+
+
+
+</article>
+    </div>
+    <!-- End Main Content -->
+
+    <!-- Sidebar -->
+    <aside class="large-3 columns">
+
+        <h5 class="sidebar-title">Stuff</h5>
+        <ul class="side-nav">
+            <li><a href="http://codethink.com/">codethink</a></li>
+            <li><a href="http://wiki.baserock.org/">baserock</a></li>
+            <li><a href="http://twitter.com/devcurmudgeon">twitter</a></li>
+            <li><a href="http://github.com/devcurmudgeon">github</a></li>
+        </ul>
+		
+        <h5 class="sidebar-title">Posts</h5>
+<table class="table-archive">
+    <tbody>
+        <tr>
+        <td><a href='three-times-done.html'>Three Times Done</a></td>
+        </tr>
+        <tr>
+        <td><a href='refactoring-is-an-anti-pattern.html'>Refactoring is an anti-pattern</a></td>
+        </tr>
+        <tr>
+        <td><a href='what-does-bsp-stand-for.html'>What does "BSP" stand for?</a></td>
+        </tr>
+        <tr>
+        <td><a href='the-worst-metric.html'>The Worst Metric</a></td>
+        </tr>
+        <tr>
+        <td><a href='the-software-commandments.html'>The software commandments</a></td>
+        </tr>
+        <tr>
+        <td><a href='the-best-revenge.html'>The best revenge...</a></td>
+        </tr>
+        <tr>
+        <td><a href='i-predict-the-future-of-embedded-linux.html'>I predict the future of embedded Linux</a></td>
+        </tr>
+        <tr>
+        <td><a href='i-believe-in-aeroplanes.html'>I believe in aeroplanes</a></td>
+        </tr>
+        <tr>
+        <td><a href='devcurmudgeon.html'>devcurmudgeon</a></td>
+        </tr>
+        <tr>
+        <td><a href='el-reg-not-your-grandads-project-management.html'>El Reg "not your grandad's project management"</a></td>
+        </tr>
+        <tr>
+        <td><a href='my-briefcase-is-older-than-you.html'>My briefcase is older than you</a></td>
+        </tr>
+        <tr>
+        <td><a href='picking-a-fight.html'>Picking a fight...</a></td>
+        </tr>
+        <tr>
+        <td><a href='musical-differences.html'>Musical differences...</a></td>
+        </tr>
+        <tr>
+        <td><a href='open-sores.html'>Open Sores</a></td>
+        </tr>
+        <tr>
+        <td><a href='i-dont-like-your-code.html'>I don't like your code...</a></td>
+        </tr>
+        <tr>
+        <td><a href='apple-vs-contortionists-redux.html'>Apple vs Contortionists redux</a></td>
+        </tr>
+        <tr>
+        <td><a href='software-chaos-ridiculously-under-managed.html'>Software Chaos Ridiculously Under Managed</a></td>
+        </tr>
+        <tr>
+        <td><a href='emperors-new-scrum-iteration-1.html'>Emperor's New Scrum... iteration 1</a></td>
+        </tr>
+        <tr>
+        <td><a href='on-time-and-on-budget-yeah-right.html'>On time and on budget - yeah right!</a></td>
+        </tr>
+        <tr>
+        <td><a href='extreme-programming-80s-style-epic-fail.html'>Extreme programming 80s style - epic fail</a></td>
+        </tr>
+        <tr>
+        <td><a href='some-background.html'>Some background...</a></td>
+        </tr>
+    </tbody>
+</table>
+
+    </aside> <!-- End Sidebar -->
+
+</div> <!-- End Main Content and Sidebar -->
+
+
+<!-- Footer -->
+<footer class="row">
+    <div class="large-12 columns">
+        <hr />
+        <div class="row">
+            <div class="large-6 columns">
+              <!--                  <p>devcurmudgeon by devcurmudgeon</p> -->
+            </div>
+            </div>
+    </div>
+</footer>
+</body>
+</html>
