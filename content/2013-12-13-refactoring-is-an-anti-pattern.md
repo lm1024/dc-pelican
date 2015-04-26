@@ -4,7 +4,7 @@ author: devcurmudgeon
 date: 13/12/2013
 
 
-I thought I'd written *more* than enough words on [refactoring](http://www.devcurmudgeon.com/2010/10/02/i-dont-like-your-code/) already, but maybe I was too cryptic. 
+I thought I'd written *more* than enough words on [refactoring](http://www.devcurmudgeon.com/i-dont-like-your-code) already, but maybe I was too cryptic. 
 
 So here's my version 2.
 
@@ -16,7 +16,7 @@ Sadly, the whole concept of refactoring is borked. Great in theory. Waste of tim
 
 Let me elaborate:
 
-- As I already said, [I don't like your code.](http://www.devcurmudgeon.com/2010/10/02/i-dont-like-your-code/) Why should I? It's not MY code. Whoever came up with the idea of ego-less programming didn't know many programmers.
+- As I already said, [I don't like your code.](http://www.devcurmudgeon.com/i-dont-like-your-code) Why should I? It's not MY code. Whoever came up with the idea of ego-less programming didn't know many programmers.
 
 - When I say "I" here I really mean *everybody*. "I don't like your code" is just a corollary of "You don't like anyone else's code". Actually, if you're smart you probably don't even like YOUR OWN code. Unless you wrote it very recently and can still remember exactly WHY you <strike>hacked it</strike> had to do it that way.
 
@@ -28,7 +28,7 @@ Let me elaborate:
 
 - Now it looks like your previously tolerable code is broken. Even if you refactored it already, you couldn't possibly have anticipated this change, because even though you may be the best coder in the world YOU CAN'T PREDICT THE FUTURE.
 
-- So at this point, refactored or not, [I <b>really</b> don't like your code.](http://www.devcurmudgeon.com/2010/10/02/i-dont-like-your-code/) Not just because you wrote it, but because now it doesn't do what I need it to do.
+- So at this point, refactored or not, [I <b>really</b> don't like your code.](http://www.devcurmudgeon.com/i-dont-like-your-code) Not just because you wrote it, but because now it doesn't do what I need it to do.
 
 - The moment I have to make your code do something new, I'll have to re-write some of it. Probably all of it.
 
