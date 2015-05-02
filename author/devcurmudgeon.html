@@ -46,6 +46,33 @@
         
 
             <article>
+                <a href="/leading-tools-in-genivi.html"><h3 class="article-title">Leading Tools in GENIVI</h3></a>
+<h6 class="subheader" title="2015-05-02T00:00:00+02:00">Sat 02 May 2015
+</h6>
+
+
+<p>I've had a stormy relationship with the automotive industry - love-hate doesn't begin to cover it.</p>
+<p>It's not that I'm a car guy - I can barely manage an oil change. But cars these days contain a staggering amount of software. And in spite of what some may say, I am a software guy.</p>
+<p>So, like a moth to a flame, I got drawn in. Over the last few years I and my colleagues have been involved in a series of difficult in-vehicle projects requiring a huge amount of <strike>patience</strike> <strike>screaming</strike> <strike>head-desking</strike> deep Linux expertise.</p>
+<p>I've made friends, and enemies. I've learned a lot. Much of it unrepeatable in polite company.</p>
+<p>I've been involved in some successes. You may have heard of the Baserock GENIVI Baseline, which we've delivered on a  six weekly cadence like clockwork, in spite of at least one organisation's best efforts to blow it out of the water (see what I did there?) before we even started.</p>
+<p>And failures - many of those. For example I remember folks laughed at my presentations when I tried to explain in 2012 and 2013 that we are going to need frequent security updates, ongoing throughout the lifetime of the vehicles. Since Snowden and Heartbleed no-one thinks security is funny any more, though, which is progress.</p>
+<p>Anyway, it seems I can't escape the hypnotic lure of GENIVI. By <strike>an act of treachery</strike> a twist of fate I'm now leading Tools there. Some will say that I am a Tool myself. I like to imagine me as something powerful, like a power drill. Others clearly think I'm just wind and noise, like a leaf blower. Maybe I'm just a spanner in the works.</p>
+<p>But I digress. The key point is that I've committed to spend up to 8 hours per week helping to improve the tooling situation for GENIVI. By implication maybe in a small way I can help to improve tooling more widely in the industry. </p>
+<p>I can't say I'm excited by software tools. I hate most of them, because in general they suck. And in any case, folks who get excited about tools are missing something fundamental...</p>
+<p>We need to make software tooling for cars as boring, predictable and safe as we possibly can.</p>
+
+
+            </article>
+
+
+                <hr  class="gradient"/>
+
+
+        
+
+
+            <article>
                 <a href="/three-times-done.html"><h3 class="article-title">Three Times Done</h3></a>
 <h6 class="subheader" title="2015-01-11T00:00:00+01:00">Sun 11 January 2015
 </h6>
@@ -57,97 +84,12 @@
 <li>the work has been checked in to the VCS</li>
 <li>it builds ok</li>
 <li>the automated tests pass</li>
-<li>documentation exists, etc.</li>
-</ul>
-
-<p>That's great, assuming that infrastructure to satisfy the checklist actually exists and is stable. Often on projects we find ourselves having to create the infrastructure itself, and define/agree workable procedures relative to the specific work we need to do.</p>
-
-<p>And in an R&amp;D or services environment with lots of variance in project parameters (scale, technology, risks, scope, terms) we often struggle to nail down what 'done' actually means. </p>
-
-<p>In many cases, 'done' on a single project needs to mean different things at different times and for different types of work.</p>
-
-<p>For example, a thorough and formal 'done' with tests and documentation etc may be great for ensuring a satisfactory delivery, but it would impede prototyping to establish whether the project is feasible in the first place.</p>
-
-<p>So I'm proposing that we can explicitly consider software work in three modes:</p>
-
-<ul>
-<li>R&amp;D</li>
-<li>ENGINEERING</li>
-<li>PRODUCTION </li>
-</ul>
-
-<h3>1: R&amp;D</h3>
-
-<p>(Feasibility, prototype, proof of concept, demo, hack, kludge, experiment, investigation, research)</p>
-
-<p>At this stage we want to get to a specific result, but don't really care how we get there. The emphasis is on</p>
-
-<ul>
-<li>gaining information - can it be done? how should it be done?</li>
-<li>reducing risks</li>
-<li>providing proof, a demonstration, a video, a report</li>
-<li>collecting and documenting ideas, opportunities, obstacles, risks to help in later stages</li>
-<li>getting to the end as fast as is reasonably possible</li>
-</ul>
-
-<p>Crucial thing to note here is that by default this type of work should typically happen in a fast, creative, cut-as-many-corners-as-we-can-to-get-there style.</p>
-
-<p>Any systems/solutions/software that we spin up for this should normally be considered to be throw-away or temporary. If a stated objective is to <em>use</em> the output in some way, that use should be noted as risky, experimental etc, since it will exploit piece of work which is ill-defined and will be of uncertain quality. </p>
-
-<p>The two key traps to avoid are</p>
-
-<p>A) management thinking that the resulting demo/POC actually does anything that can be used/sold/delivered.
-B) engineers fearing that management will want to deliver the result</p>
-
-<p>Trap A) leads to stressed engineers, and users receiving systems with fundamental design/approach flaws
-Trap B) leads to engineers wasting time and effort on things which ultimately are not required</p>
-
-<h3>2: ENGINEERING</h3>
-
-<p>(Engineered, developed, coded, tested, reviewed, signed off)</p>
-
-<p>Now we want to implement something for real. The result of this will be used by other people, so it needs to be designed properly, perform fast enough, be reliable, deal with bad user inputs etc. The output from this is expected to be some system/solution/software that the engineers believe is 'done'. </p>
-
-<p>It does the job.</p>
-
-<p>The key trap here is</p>
-
-<p>C) Management thinking that the resulting engineering solution is the end of the project. In most cases, a range of follow-on activities will be required after engineering is notionally 'complete' to get the result adopted and running for its target users. The gap may include data migration, deployment, releasing, training, soak testing, backups, user setup, security, maintenance planning etc.</p>
-
-<p>Even exceptional engineers will not have time or mental bandwidth to do these necessary things while designing and coding the solution itself.</p>
-
-<p>However we must ensure that the engineering output from this phase includes all of the notes, ideas, limitations and documentation that the team have generated getting this far, as input into what comes next...</p>
-
-<h3>3: PRODUCTION</h3>
-
-<p>(Live, in production, integrated, released, delivered, published, deployed, documented, released, validated, accepted, upstreamed, in mainline, being maintained)</p>
-
-<p>This phase is where the real world kicks in. All of the assumptions and knowledge gaps that were implicitly influencing the engineers working in phase 2) are now exposed as other people try to take the result and roll it into production, get it through acceptance, sign it off, use it for real etc.</p>
-
-<p>Traps here include</p>
-
-<p>D) expecting the engineers that did phase 2) to deal with phase 3) - it's unlikely that they'll be effective at exposing their own blind spots and assumptions.
-E) assuming that this phase will take less effort than the one before it</p>
-
-<h3>Notes</h3>
-
-<ul>
-<li>We are not assuming that all pieces of work go through all phases</li>
-<li>When working on R&amp;D or ENGINEERING we still need to consider that PRODUCTION may/will happen later, and ensure the results of that thinking are recorded and passed on in an effective way.</li>
-<li>It will not always be possible to separate the work this way - however explicitly clarifying which phase an activity fits into should help to establish what needs doing, and how the job should be approached.</li>
-</ul>
-
-<p>Finally, note that work done when we focus on real delivery may expose deep misunderstandings and/or issues which invalidate much or all of the previous effort. So remember "Code less. Every line creates a work chain. Code is a liability, not an asset"</p><p class="subheader">Category: <a href="/category/misc.html">misc</a>
-
-</p>
+<li>documentation ...</li></ul>
 
 
-
-            </article>
-
-
+                <a class="button radius secondary small right" href="/three-times-done.html">Read More</a>
                 <hr  class="gradient"/>
-
+            </article>
 
         
 
@@ -161,10 +103,7 @@ E) assuming that this phase will take less effort than the one before it</p>
 <p>I thought I'd written <em>more</em> than enough words on <a href="http://www.devcurmudgeon.com/i-dont-like-your-code">refactoring</a> already, but maybe I was too cryptic. </p>
 <p>So here's my version 2.</p>
 <p>Let's start by noting that most of the folks who claim that they are 'refactoring' don't actually know what it means.</p>
-<p>I, on the ...</p><p class="subheader">Category: <a href="/category/misc.html">misc</a>
-
-</p>
-
+<p>I, on the ...</p>
 
 
                 <a class="button radius secondary small right" href="/refactoring-is-an-anti-pattern.html">Read More</a>
@@ -184,10 +123,7 @@ E) assuming that this phase will take less effort than the one before it</p>
 <p>Some folks think BSP stands for "Board Support Package". </p>
 <p>But, as with <a href="http://www.devcurmudgeon.com/2010/08/28/software-chaos-ridiculously-under-managed/">SCRUM</a>, the popular view is wrong.</p>
 <p>In the real world, BSP means <b>Bull Shit Project</b>.</p>
-<p>BSPs are ...</p><p class="subheader">Category: <a href="/category/misc.html">misc</a>
-
-</p>
-
+<p>BSPs are ...</p>
 
 
                 <a class="button radius secondary small right" href="/what-does-bsp-stand-for.html">Read More</a>
@@ -204,10 +140,7 @@ E) assuming that this phase will take less effort than the one before it</p>
 
 
 <p>Lines Of Code is an awful way to measure software - but look at the pretty picture...</p>
-<script type="text/javascript" src="//ajax.googleapis.com/ajax/static/modules/gviz/1.0/chart.js"> {"dataSourceUrl":"//docs.google.com/a/codethink.co.uk/spreadsheet/tq?key=0Aiph3VJv3myMdFBaZTNKUDNFeFVWa3pjY2M3ZlI4dnc&transpose=0&headers=0&range=D2%3AE158&gid=6&pub=1","options":{"titleTextStyle":{"bold":true,"color":"#000","fontSize":16},"animation":{"duration":500 ...</script><p class="subheader">Category: <a href="/category/misc.html">misc</a>
-
-</p>
-
+<script type="text/javascript" src="//ajax.googleapis.com/ajax/static/modules/gviz/1.0/chart.js"> {"dataSourceUrl":"//docs.google.com/a/codethink.co.uk/spreadsheet/tq?key=0Aiph3VJv3myMdFBaZTNKUDNFeFVWa3pjY2M3ZlI4dnc&transpose=0&headers=0&range=D2%3AE158&gid=6&pub=1","options":{"titleTextStyle":{"bold":true,"color":"#000","fontSize":16},"animation":{"duration":500 ...</script>
 
 
                 <a class="button radius secondary small right" href="/the-worst-metric.html">Read More</a>
@@ -227,10 +160,7 @@ E) assuming that this phase will take less effort than the one before it</p>
 <p>I accept short timeboxed sprints. </p>
 <p>Agreed definition of DONE - great.</p>
 <p>Prioritised list of requirements - awesome.</p>
-<p>Daily standups - fine if you are all in the same room, and you stick to the rules ...</p><p class="subheader">Category: <a href="/category/misc.html">misc</a>
-
-</p>
-
+<p>Daily standups - fine if you are all in the same room, and you stick to the rules ...</p>
 
 
                 <a class="button radius secondary small right" href="/the-software-commandments.html">Read More</a>
@@ -249,10 +179,7 @@ E) assuming that this phase will take less effort than the one before it</p>
 <p>Over the years I've worked with many amazing people, but from time to time I've also had to deal with some <strike>complete assholes</strike> unpleasantness. </p>
 <p>Frankly it's amazing at how downright dishonest, manipulative and plain stupid some folks can be. </p>
 <p>Actually plain stupid applies to me too. </p>
-<p>I ...</p><p class="subheader">Category: <a href="/category/misc.html">misc</a>
-
-</p>
-
+<p>I ...</p>
 
 
                 <a class="button radius secondary small right" href="/the-best-revenge.html">Read More</a>
@@ -270,10 +197,7 @@ E) assuming that this phase will take less effort than the one before it</p>
 
 <p>I've been reading the excellent <i>Future Babble</i> by Dan Gardner. </p>
 <p>Perhaps unsurprisingly, it confirms that we're all wired as <b>complete idiots</b> when it comes to looking into the future.</p>
-<p>The science shows that the more confidently someone makes a prediction, the more likely they're talking utter balls ...</p><p class="subheader">Category: <a href="/category/misc.html">misc</a>
-
-</p>
-
+<p>The science shows that the more confidently someone makes a prediction, the more likely they're talking utter balls ...</p>
 
 
                 <a class="button radius secondary small right" href="/i-predict-the-future-of-embedded-linux.html">Read More</a>
@@ -290,10 +214,7 @@ E) assuming that this phase will take less effort than the one before it</p>
 
 
 <p>After a typically <strike>ignored</strike> secretive softlaunch, I'm finally taking the wraps off devcurmudgeon. The idea is to be funny, incisive... and maybe change the world one <strike>hacker</strike> software developer at a time. But I'm not optimistic. This project may fail, like so many others :-) </p>
-<p>Mostly I expect to ...</p><p class="subheader">Category: <a href="/category/misc.html">misc</a>
-
-</p>
-
+<p>Mostly I expect to ...</p>
 
 
                 <a class="button radius secondary small right" href="/devcurmudgeon.html">Read More</a>
@@ -314,10 +235,7 @@ E) assuming that this phase will take less effort than the one before it</p>
 <iframe src="http://prezi.com/embed/h_9qjmqiql1y/?bgcolor=ffffff&amp;lock_to_path=1&amp;autoplay=0&amp;autohide_ctrls=0&amp;features=undefined&amp;disabled_features=undefined" width="550" height="400" frameBorder="0"></iframe>
 
 <p>But the exercise was not entirely a waste of time.</p>
-<p>A spot of ...</p><p class="subheader">Category: <a href="/category/misc.html">misc</a>
-
-</p>
-
+<p>A spot of ...</p>
 
 
                 <a class="button radius secondary small right" href="/my-briefcase-is-older-than-you.html">Read More</a>
@@ -335,10 +253,7 @@ E) assuming that this phase will take less effort than the one before it</p>
 
 <p>Maybe I'm alone on this one ... but aren't Open Source and Agile pretty much directly opposed?</p>
 <p>Agile = 5-9 people in a team, locked up together, everything thrashed out in face-to-face conversations, daily standups, timeboxed iterative deliveries.</p>
-<p>Open Source = no fixed team size, distributed around the world, everything thrashed ...</p><p class="subheader">Category: <a href="/category/misc.html">misc</a>
-
-</p>
-
+<p>Open Source = no fixed team size, distributed around the world, everything thrashed ...</p>
 
 
                 <a class="button radius secondary small right" href="/picking-a-fight.html">Read More</a>
@@ -356,10 +271,7 @@ E) assuming that this phase will take less effort than the one before it</p>
 
 <p>I used to be in a band, when I still had enough hair for a stupid haircut.</p>
 <p>We had real instruments. None of this electronic bleepy noises nonsense. We used to lug huge amplifiers everywhere, because the guitars always had to be loud enough to shake the building.</p>
-<p>Whereas the ...</p><p class="subheader">Category: <a href="/category/misc.html">misc</a>
-
-</p>
-
+<p>Whereas the ...</p>
 
 
                 <a class="button radius secondary small right" href="/musical-differences.html">Read More</a>
@@ -378,10 +290,7 @@ E) assuming that this phase will take less effort than the one before it</p>
 <p>I need to get with the program. All these years working on secret projects with someone else's name on the mastheads have created an obvious problem - nobody knows who the hex I am.</p>
 <p>But wait!</p>
 <p>There's an obvious solution too.</p>
-<p>Why don't I just take my old ...</p><p class="subheader">Category: <a href="/category/misc.html">misc</a>
-
-</p>
-
+<p>Why don't I just take my old ...</p>
 
 
                 <a class="button radius secondary small right" href="/open-sores.html">Read More</a>
@@ -399,10 +308,7 @@ E) assuming that this phase will take less effort than the one before it</p>
 
 <p>No, really.</p>
 <p>I mean it.</p>
-<p>Refactor as much as you want, it will still smell of you.</p><p class="subheader">Category: <a href="/category/misc.html">misc</a>
-
-</p>
-
+<p>Refactor as much as you want, it will still smell of you.</p>
 
 
                 <a class="button radius secondary small right" href="/i-dont-like-your-code.html">Read More</a>
@@ -423,10 +329,7 @@ E) assuming that this phase will take less effort than the one before it</p>
 <p>Wanna hear? Of course you do... you too could make gazillions... but you've got to promise not to tell anybody else. </p>
 <p>It goes like this...</p>
 <ol>
-<li>Three independent design teams ...</li></ol><p class="subheader">Category: <a href="/category/misc.html">misc</a>
-
-</p>
-
+<li>Three independent design teams ...</li></ol>
 
 
                 <a class="button radius secondary small right" href="/apple-vs-contortionists-redux.html">Read More</a>
@@ -444,10 +347,7 @@ E) assuming that this phase will take less effort than the one before it</p>
 
 <p>So this post is just a place-holder for me to launch my new methodology - SCRUM.</p>
 <p>I'd hate to have some fan copy my ideas (again) and find myself unable to prove categorically that I thought it first, so here goes...</p>
-<p>Google tells me (so it must be true) that ...</p><p class="subheader">Category: <a href="/category/misc.html">misc</a>
-
-</p>
-
+<p>Google tells me (so it must be true) that ...</p>
 
 
                 <a class="button radius secondary small right" href="/software-chaos-ridiculously-under-managed.html">Read More</a>
@@ -464,10 +364,7 @@ E) assuming that this phase will take less effort than the one before it</p>
 
 
 <p>I've been wading through the literature on Scrum/Agile/Lean/Kanban/Hokey-kokey for months now, and I'm still no nearer to making sense of it...</p>
-<p>How on earth can folks seriously believe that the whole commercial world should turn itself upside down so programmers can have an easy ...</p><p class="subheader">Category: <a href="/category/misc.html">misc</a>
-
-</p>
-
+<p>How on earth can folks seriously believe that the whole commercial world should turn itself upside down so programmers can have an easy ...</p>
 
 
                 <a class="button radius secondary small right" href="/emperors-new-scrum-iteration-1.html">Read More</a>
@@ -484,10 +381,7 @@ E) assuming that this phase will take less effort than the one before it</p>
 
 
 <p>Developing complex software well is actually very difficult to do.</p>
-<p>Seems to me it requires intelligence way above average, combined with enough pig-headedness to refuse to be defeated by dumb chips and other people's code spitting random error codes at you - often for hours or days at a time ...</p><p class="subheader">Category: <a href="/category/misc.html">misc</a>
-
-</p>
-
+<p>Seems to me it requires intelligence way above average, combined with enough pig-headedness to refuse to be defeated by dumb chips and other people's code spitting random error codes at you - often for hours or days at a time ...</p>
 
 
                 <a class="button radius secondary small right" href="/on-time-and-on-budget-yeah-right.html">Read More</a>
@@ -504,10 +398,7 @@ E) assuming that this phase will take less effort than the one before it</p>
 
 
 <p>My first brush with programming was on the <a href="http://www.rskey.org/detail.asp?manufacturer=Sinclair&amp;model=Cambridge+Programmable">Sinclair Cambridge Programmable Calculator</a>. A mathematics teacher got me hooked - if I remember well he was later knocked down and killed by a milk float.</p>
-<p>Later I messed about on the <a href="http://en.wikipedia.org/wiki/ZX80">ZX80</a>, <a href="http://en.wikipedia.org/wiki/ZX81">ZX81</a>, <a href="http://en.wikipedia.org/wiki/Sinclair_ZX_Spectrum">ZX Spectrum</a>, and <a href="http://en.wikipedia.org/wiki/Sinclair_QL">Sinclair QL</a> while sailing gracelessly through ...</p><p class="subheader">Category: <a href="/category/misc.html">misc</a>
-
-</p>
-
+<p>Later I messed about on the <a href="http://en.wikipedia.org/wiki/ZX80">ZX80</a>, <a href="http://en.wikipedia.org/wiki/ZX81">ZX81</a>, <a href="http://en.wikipedia.org/wiki/Sinclair_ZX_Spectrum">ZX Spectrum</a>, and <a href="http://en.wikipedia.org/wiki/Sinclair_QL">Sinclair QL</a> while sailing gracelessly through ...</p>
 
 
                 <a class="button radius secondary small right" href="/extreme-programming-80s-style-epic-fail.html">Read More</a>
@@ -524,10 +415,7 @@ E) assuming that this phase will take less effort than the one before it</p>
 
 
 <p>After years of advising folks NOT to blog, tweet or display their <strike>backsides</strike> innermost secrets on facebook, here I am poised to break my own rules. No doubt I'll come to regret it later, but really, I need to vent.</p>
-<p>Later posts will explain why...</p><p class="subheader">Category: <a href="/category/misc.html">misc</a>
-
-</p>
-
+<p>Later posts will explain why...</p>
 
 
                 <a class="button radius secondary small right" href="/some-background.html">Read More</a>
@@ -553,6 +441,9 @@ E) assuming that this phase will take less effort than the one before it</p>
         <h5 class="sidebar-title">Posts</h5>
 <table class="table-archive">
     <tbody>
+        <tr>
+        <td><a href='leading-tools-in-genivi.html'>Leading Tools in GENIVI</a></td>
+        </tr>
         <tr>
         <td><a href='three-times-done.html'>Three Times Done</a></td>
         </tr>
