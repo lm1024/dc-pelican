@@ -13,7 +13,7 @@ I've been involved in some successes. You may have heard of the Baserock GENIVI 
 
 And failures - many of those. For example I remember folks laughed at my presentations when I tried to explain in 2012 and 2013 that we are going to need frequent security updates, ongoing throughout the lifetime of the vehicles. Since Snowden and Heartbleed no-one thinks security is funny any more, though, which is progress.
 
-Anyway, it seems I can't escape the hypnotic lure of GENIVI. By <strike>an act of treachery</strike> a twist of fate I'm now leading Tools there. Some will say that I am a Tool myself. I like to imagine me as something powerful, like a power drill. Others clearly think I'm just wind and noise, like a leaf blower. Maybe I'm just a spanner in the works.
+Anyway, it seems I can't escape the hypnotic lure of GENIVI. By <strike>an act of treachery</strike> a twist of fate I'm now leading Tools there. Some will say that I am a Tool myself. I like to imagine me as something powerful, like a drill. Others clearly think I'm just wind and noise, like a leaf blower. Maybe I'm just a spanner in the works.
 
 But I digress. The key point is that I've committed to spend up to 8 hours per week helping to improve the tooling situation for GENIVI. By implication maybe in a small way I can help to improve tooling more widely in the industry. 
 
