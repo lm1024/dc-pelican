@@ -46,21 +46,56 @@
         
 
             <article>
-                <a href="/leading-tools-in-genivi.html"><h3 class="article-title">Leading Tools in GENIVI</h3></a>
-<h6 class="subheader" title="2015-05-02T00:00:00+02:00">Sat 02 May 2015
+                <a href="/why-should-genivi-members-contribute-again.html"><h3 class="article-title">Why Should GENIVI Members Contribute, Again?</h3></a>
+<h6 class="subheader" title="2015-06-23T00:00:00+02:00">Tue 23 June 2015
 </h6>
 
 
-<p>I've had a stormy relationship with the automotive industry - love-hate doesn't begin to cover it.</p>
-<p>It's not that I'm a car guy - I can barely manage an oil change. But cars these days contain a staggering amount of software. And in spite of what some may say, I am a software guy.</p>
-<p>So, like a moth to a flame, I got drawn in. Over the last few years I and my colleagues have been involved in a series of difficult in-vehicle projects requiring a huge amount of <strike>patience</strike> <strike>screaming</strike> <strike>head-desking</strike> deep Linux expertise.</p>
-<p>I've made friends, and enemies. I've learned a lot. Much of it unrepeatable in polite company.</p>
-<p>I've been involved in some successes. You may have heard of the Baserock GENIVI Baseline, which we've delivered on a  six weekly cadence like clockwork, in spite of at least one organisation's best efforts to blow it out of the water (see what I did there?) before we even started.</p>
-<p>And failures - many of those. For example I remember folks laughed at my presentations when I tried to explain in 2012 and 2013 that we are going to need frequent security updates, ongoing throughout the lifetime of the vehicles. Since Snowden and Heartbleed no-one thinks security is funny any more, though, which is progress.</p>
-<p>Anyway, it seems I can't escape the hypnotic lure of GENIVI. By <strike>an act of treachery</strike> a twist of fate I'm now leading Tools there. Some will say that I am a Tool myself. I like to imagine me as something powerful, like a drill. Others clearly think I'm just wind and noise, like a leaf blower. Maybe I'm just a spanner in the works.</p>
-<p>But I digress. The key point is that I've committed to spend up to 8 hours per week helping to improve the tooling situation for GENIVI. By implication maybe in a small way I can help to improve tooling more widely in the industry. </p>
-<p>I can't say I'm excited by software tools. I hate most of them, because in general they suck. And in any case, folks who get excited about tools are missing something fundamental...</p>
-<p>We need to make software tooling for cars as boring, predictable and safe as we possibly can.</p>
+<p>GENIVI Members need to make attractive, useful software to run reliably in cars for a long time. The amount of software needed is increasing faster than our capacity to bring in extra engineers, and our ability to increase the productivity of the engineers already engaged. Given the economics, automotive organizations tend to favor reuse of existing solutions, since this usually leads to shorter timescales, lower costs and higher reliability.</p>
+<p>Looking broadly across industries, many organizations and engineers have concluded that the most effective long-term approach for software reuse is Free and Open Source Software (FOSS). It's hard to beat a "license fee" of zero, for solutions that are already being used in a wide range of environments.</p>
+<p>In some industries, working with FOSS is a well-trodden path. Major vendors have been using open source for solutions for enterprise, telecoms and mobile for a very long time and have reached some conclusions about what works best. I think the automotive industry is still learning what works best for automotive use cases.</p>
+<p>To be fair, automotive is really a rather difficult industry, with many demanding constraints: very long product lifetimes, very high reliability and safety requirements, extreme competition on features and price. And the situation is not helped by the dramatic rise in the sheer volume of software required in automotive products over the last few years, leading to levels of engineering cost and complexity way beyond the experience of most automotive decision-makers.</p>
+<p>I think GENIVI's core challenge is to help its community bridge the knowledge gap, to make best use of what engineers and managers have learned already in other industries. And the "crack in the foundation" is simply that the automotive industry as a whole doesn't yet believe, in its bones, that collaboration and sharing is the best way to deliver in-vehicle software.  Some organizations are hopeful, others are interested, others are running pilot programs, and some are in production, but very few are completely committed to the open source road so far.</p>
+<p>I'll digress slightly and mention that the Consumer Electronics Linux Forum recently conducted a survey of member engineers to understand what the day-to-day barriers are that stop them from contributing within the open source community. The answers are enlightening, and highly relevant to what we see in the trenches in GENIVI. I'll rephrase the words to make the general point, and attempt to clarify so it makes sense in the automotive context specifically. See https://lwn.net/Articles/647524/ for the original article (available to LWN subscribers.)</p>
+<ol>
+<li>
+<p><b>Developing against an old version of the software</b> (54%)
+For example, Fred is working on a GENIVI stack from two years ago - patches offered upstream would probably not be useful.</p>
+</li>
+<li>
+<p><b>Work depends on proprietary code</b> (50%)
+The work can't be made public.</p>
+</li>
+<li>
+<p><b>It's too hard</b> (45%)
+For example, internal IT makes it difficult to collaborate in the open or follow the contribution process.</p>
+</li>
+<li>
+<p><b>Unable to test</b> (41%)
+The system Fred is working on is so different from the mainline, it's not clear that any contributions would even work for other teams.</p>
+</li>
+<li>
+<p><b>Employer does not allow time</b> (40%)
+Because contribution is not seen to be commercially justified.</p>
+</li>
+<li>
+<p><b>Patch not good enough</b> (35%)
+Perhaps because the current deadlines are so urgent Fred has no time or budget to improve it.</p>
+</li>
+<li>
+<p><b>Afraid of rejection</b> (33%)
+Aren't we all?</p>
+</li>
+</ol>
+<p>Broadly this all boils down to <i>"unless you proactively work with the upstream community, you are unlikely to be contributing patches. Your work is probably not relevant enough or of sufficient quality to be accepted by upstream even if you do try to contribute it."</i>  So the result is that you don't contribute, thus avoiding the cost, pain and time involved in "working with upstream." This makes perfect commercial sense during development, with deadlines looming.</p>
+<p>Until you realize that your colleagues will need to maintain the software for a very long time, completely adrift from the various upstream teams that developed it. <b>Maintaining 100 million lines of code on your own is not much fun, and surprisingly expensive.</b></p>
+<p>Automotive has over a century of experience in measuring and improving engineering cost, efficiency and reliability. Software is notoriously hard to measure in detail, but over the long term the clear signals to look at will be:</p>
+<ul>
+<li>total cost of software engineering (in-house and subcontract, development and maintenance) over the lifetime of the product.</li>
+<li>customer complaints, recalls, security breaches and collateral damage.</li>
+</ul>
+<p>Unfortunately, we don't yet have clear proof that working in the open and collaborating on solutions over the long-term has delivered better products for automotive at lower cost. It's simply too early to tell.  The numbers aren't in yet. </p>
+<p>But personally I think the evidence from other industries is overwhelming. I know I'm not alone.</p>
 
 
             </article>
@@ -68,6 +103,23 @@
 
                 <hr  class="gradient"/>
 
+
+        
+
+
+            <article>
+                <a href="/leading-tools-in-genivi.html"><h3 class="article-title">Leading Tools in GENIVI</h3></a>
+<h6 class="subheader" title="2015-05-02T00:00:00+02:00">Sat 02 May 2015
+</h6>
+
+
+<p>I've had a stormy relationship with the automotive industry - love-hate doesn't begin to cover it.</p>
+<p>It's not that I'm a car guy - I can barely manage an oil change. But cars these days contain a staggering amount of software. And in spite of what some may ...</p>
+
+
+                <a class="button radius secondary small right" href="/leading-tools-in-genivi.html">Read More</a>
+                <hr  class="gradient"/>
+            </article>
 
         
 
@@ -441,6 +493,9 @@
         <h5 class="sidebar-title">Posts</h5>
 <table class="table-archive">
     <tbody>
+        <tr>
+        <td><a href='why-should-genivi-members-contribute-again.html'>Why Should GENIVI Members Contribute, Again?</a></td>
+        </tr>
         <tr>
         <td><a href='leading-tools-in-genivi.html'>Leading Tools in GENIVI</a></td>
         </tr>
