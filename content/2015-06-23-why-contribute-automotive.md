@@ -13,7 +13,7 @@ To be fair, automotive is really a rather difficult industry, with many demandin
  
 I think GENIVI's core challenge is to help its community bridge the knowledge gap, to make best use of what engineers and managers have learned already in other industries. And the "crack in the foundation" is simply that the automotive industry as a whole doesn't yet believe, in its bones, that collaboration and sharing is the best way to deliver in-vehicle software.  Some organizations are hopeful, others are interested, others are running pilot programs, and some are in production, but very few are completely committed to the open source road so far.
  
-I'll digress slightly and mention that the Consumer Electronics Linux Forum recently conducted a survey of member engineers to understand what the day-to-day barriers are that stop them from contributing within the open source community. The answers are enlightening, and highly relevant to what we see in the trenches in GENIVI. I'll rephrase the words to make the general point, and attempt to clarify so it makes sense in the automotive context specifically. See https://lwn.net/Articles/647524/ for the original article (available to LWN subscribers.)
+I'll digress slightly and mention that the Consumer Electronics Linux Forum recently conducted a survey of member engineers to understand what the day-to-day barriers are that stop them from contributing within the open source community. The answers are enlightening, and highly relevant to what we see in the trenches in GENIVI. I'll rephrase the words to make the general point, and attempt to clarify so it makes sense in the automotive context specifically. See  the original [article at LWN](https://lwn.net/Articles/647524/).
  
 1. <b>Developing against an old version of the software</b> (54%)
 For example, Fred is working on a GENIVI stack from two years ago - patches offered upstream would probably not be useful.
@@ -48,3 +48,5 @@ Automotive has over a century of experience in measuring and improving engineeri
 Unfortunately, we don't yet have clear proof that working in the open and collaborating on solutions over the long-term has delivered better products for automotive at lower cost. It's simply too early to tell.  The numbers aren't in yet. 
 
 But personally I think the evidence from other industries is overwhelming. I know I'm not alone.
+
+(This article was originally published in the June 2015 [GENIVI](http://www.genivi.org) Newsletter.)
