@@ -1,5 +1,5 @@
 # to serve the static content locally, in the output directory
-$ python -m SimpleHTTPServer
+$ cd output && python -m SimpleHTTPServer
 
 # to re-generate static files from the content directory
 $ pelican content
