@@ -77,11 +77,13 @@ And we definitely don't know precisely where we're *going*, because:
 
 So let's revisit the factors, in project terms:
 
-**UNCERTAINTY:** if we're not sure about 'there'
+**UNCERTAINTY:** if we're not sure about 'here' or 'there'
 
-- we choose somewhere near *here* in the general direction of 'there'
+- we choose somewhere in the general direction of 'there', near where we think
+  'here' is,
 - and set off towards that first interim goal
-- and keep gathering new information about 'there'
+- and keep gathering new information about 'there' (and maybe about 'here'
+  too)
 - and choose the next goal (maybe even abandon the first goal) based on new
   information as we digest it
 
