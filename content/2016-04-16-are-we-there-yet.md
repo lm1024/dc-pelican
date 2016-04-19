@@ -42,7 +42,7 @@ By now I expect you're out of things that can affect the journey time.
 
 - **FREQUENCY: How often do we need to make the journey?** Maybe we should invest in a private plane. Or arrange to move A or B to shorten the journey. Or settle for phonecalls and streaming video.
 
-- **UNCERTAINTY abut starting point:** What if we're not where we think we are? Do we actually need to start from A? Maybe our journey can be faster if we go directly to B.
+- **UNCERTAINTY about starting point:** What if we're not where we think we are? Do we actually need to start from A? Maybe our journey can be faster if we go directly to B.
 
 - **UNCERTAINTY about travel conditions**: traffic jams, bad weather,
 diversions, breakdowns.
@@ -127,6 +127,7 @@ So let's revisit the factors, in project terms:
 
 **RISKS:** best to
 
+- identify them as early as we can, and mitigate against them
 - keep our options open (maybe we'll find better hardware, tools, people)
 - get feedback as fast as possible
   (real-time comms, iterations, honesty + transparency)
